@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="410dp"
+    android:layout_height="250dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    app:cardCornerRadius="15dp"
+    android:id="@+id/task_adding_dialog">
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="What's your next task?"
+        android:textSize="20sp"
+        android:padding="8dp"
+        android:layout_gravity="center_horizontal"/>
+
+
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="160dp"
+        android:layout_marginTop="40dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        app:cardCornerRadius="10dp">
+        <EditText
+            android:id="@+id/et_task_description"
+            android:layout_width="match_parent"
+            android:layout_height="160dp"
+            android:inputType="text|textMultiLine"
+            android:gravity="top"
+            android:hint="@string/do_the_laundry_hint"
+            android:background="@color/grey"
+            android:textSize="20sp"
+            android:paddingVertical="10dp"
+            android:paddingHorizontal="15dp"
+            />
+    </androidx.cardview.widget.CardView>
+
+
+    <com.google.android.material.button.MaterialButton
+        android:layout_width="110dp"
+        android:layout_height="40dp"
+        android:text="@string/btn_set_time"
+        android:textSize="12sp"
+        app:cornerRadius="10dp"
+        android:layout_gravity="bottom|end"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:id="@+id/btn_set_time"/>
+
+
+</androidx.cardview.widget.CardView>
